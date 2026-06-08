@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 from groq import Groq
 import json
+import os  
 
-# Serveri i Streamlit e lexon automatikisht nga Secrets
-api_key = os.environ.get("GROQ_API_KEY") 
+# 1. Konfigurimi i Groq (Serveri i Streamlit e lexon automatikisht nga Secrets)
+api_key = os.environ.get("GROQ_API_KEY")[cite: 1]
 client = Groq(api_key=api_key)
 
 def analizo_feedbackun(teksti):

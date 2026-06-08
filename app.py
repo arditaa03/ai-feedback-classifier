@@ -5,7 +5,7 @@ import json
 import os  
 
 # 1. Konfigurimi i Groq (Serveri i Streamlit e lexon automatikisht nga Secrets)
-api_key = os.environ.get("GROQ_API_KEY")[cite: 1]
+api_key = os.environ.get("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
 def analizo_feedbackun(teksti):

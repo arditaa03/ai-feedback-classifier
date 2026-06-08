@@ -3,7 +3,7 @@ import pandas as pd
 from groq import Groq
 import json
 
-# 1. Konfigurimi i Groq (Zëvendësoje me API Key tënd të pastër)
+# Serveri i Streamlit e lexon automatikisht nga Secrets
 api_key = os.environ.get("GROQ_API_KEY") 
 client = Groq(api_key=api_key)
 
